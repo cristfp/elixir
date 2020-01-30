@@ -11,10 +11,12 @@ A versão 2 possui a autenticação e melhoras no design
 
 
 As rotas para back-end são:
+
      session_path  GET     /sessions/new            Coherence.SessionController :new
      session_path  POST    /sessions                Coherence.SessionController :create
-registration_path  GET     /registrations/new       Coherence.RegistrationController :new
-registration_path  POST    /registrations           Coherence.RegistrationController :create
+     
+    registration_path  GET     /registrations/new       Coherence.RegistrationController :new
+    registration_path  POST    /registrations           Coherence.RegistrationController :create
     password_path  GET     /passwords/new           Coherence.PasswordController :new
     password_path  POST    /passwords               Coherence.PasswordController :create
     password_path  GET     /passwords/:id/edit      Coherence.PasswordController :edit
@@ -23,17 +25,17 @@ registration_path  POST    /registrations           Coherence.RegistrationContro
       unlock_path  GET     /unlocks/new             Coherence.UnlockController :new
       unlock_path  POST    /unlocks                 Coherence.UnlockController :create
       unlock_path  GET     /unlocks/:id/edit        Coherence.UnlockController :edit
-  invitation_path  GET     /invitations/:id/edit    Coherence.InvitationController :edit
-  invitation_path  POST    /invitations/create      Coherence.InvitationController :create_user
-  invitation_path  GET     /invitations/new         Coherence.InvitationController :new
-  invitation_path  POST    /invitations             Coherence.InvitationController :create
-  invitation_path  GET     /invitations/:id/resend  Coherence.InvitationController :resend
+     invitation_path  GET     /invitations/:id/edit    Coherence.InvitationController :edit
+     invitation_path  POST    /invitations/create      Coherence.InvitationController :create_user
+     invitation_path  GET     /invitations/new         Coherence.InvitationController :new
+     invitation_path  POST    /invitations             Coherence.InvitationController :create
+     invitation_path  GET     /invitations/:id/resend  Coherence.InvitationController :resend
      session_path  DELETE  /sessions                Coherence.SessionController :delete
-registration_path  GET     /registrations           Coherence.RegistrationController :show
-registration_path  PUT     /registrations           Coherence.RegistrationController :update
-registration_path  PATCH   /registrations           Coherence.RegistrationController :update
-registration_path  GET     /registrations/edit      Coherence.RegistrationController :edit
-registration_path  DELETE  /registrations           Coherence.RegistrationController :delete
+     registration_path  GET     /registrations           Coherence.RegistrationController :show
+     registration_path  PUT     /registrations           Coherence.RegistrationController :update
+     registration_path  PATCH   /registrations           Coherence.RegistrationController :update
+     registration_path  GET     /registrations/edit      Coherence.RegistrationController :edit
+     registration_path  DELETE  /registrations           Coherence.RegistrationController :delete
         page_path  GET     /                        TodoElixirWeb.PageController :index
         todo_path  GET     /todos                   TodoElixirWeb.TodoController :index
         todo_path  GET     /todos/:id/edit          TodoElixirWeb.TodoController :edit
